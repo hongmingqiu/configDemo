@@ -1,0 +1,15 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.20.14.118:8778/eureka/
+
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-demo
+      profile: test
+
